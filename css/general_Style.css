@@ -1,0 +1,28 @@
+body{
+    background-color: grey;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+#menu_Bar{
+    
+}
+
+#left_header{
+    justify-content: flex-start;
+    display: flex;
+}
+#right_header{
+    display: flex;
+    justify-content: flex-end;
+}
+
