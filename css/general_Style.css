@@ -1,13 +1,12 @@
 html{
     /* position: relative;  */
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 } 
 body, p {
     margin: 0px;
     padding: 0px;
 }
-img{}
 
 .master-header{
     background-color: cadetblue;
@@ -34,7 +33,6 @@ img{}
 .searchbar {
     border: olive dashed 2px;
     display: flex;
-    /* flex-grow: 1;  */
     flex-basis: 600px;
 
 }
@@ -47,7 +45,6 @@ img{}
 .search-button{
     border: red solid 2px;
     display: flex;
-    /* flex-shrink: 1; */
 }
 button{
     width: 5vw;
@@ -64,6 +61,7 @@ nav {
 }
 
 .main-grid {
+    border: peru dotted 3px;
     display: grid;
     grid-template-columns: 1fr 200px;
     grid-gap: 20px;
@@ -72,7 +70,20 @@ nav {
     margin: 0 auto;
 }
 
+.title-box {
+    border: greenyellow solid 5px;
+}
+
+.description-box {
+    border: teal dashed 4px;
+}
+
+.comment-loading-box {
+    border: fuchsia dotted 4px;
+}
+
 .sidebar {
+    border: rgb(203, 32, 218) solid 4px;
     margin-bottom: 10px;
 }
 
@@ -80,4 +91,12 @@ nav {
     .main-grid {
         grid-template-columns: 1fr;
     }
+}
+
+.settings-menu {
+    background-color: goldenrod;
+}
+
+.other-links {
+    background-color: green;
 }
