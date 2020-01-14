@@ -1,7 +1,13 @@
+html{
+    /* position: relative;  */
+    width: 100%;
+    overflow: hidden;
+} 
 body, p {
     margin: 0px;
     padding: 0px;
 }
+img{}
 
 .master-header{
     background-color: cadetblue;
@@ -9,7 +15,8 @@ body, p {
     justify-content: space-between;
     padding: 10px;
     align-items: center;
-    flex-wrap: wrap;
+    width: 100%;
+    
 }
 
 .left-nav {
@@ -21,11 +28,29 @@ body, p {
 .right-nav {
     border: olive dashed 2px;
     display: flex;
+
 }
 
 .searchbar {
     border: olive dashed 2px;
     display: flex;
+    /* flex-grow: 1;  */
+    flex-basis: 600px;
+
+}
+.search-box{
+    margin: 0 auto;
+    max-width: 600px; 
+    flex-grow: 1;
+    
+}
+.search-button{
+    border: red solid 2px;
+    display: flex;
+    /* flex-shrink: 1; */
+}
+button{
+    width: 5vw;
 }
 
 .menu-item {
