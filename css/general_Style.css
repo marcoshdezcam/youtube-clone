@@ -9,6 +9,7 @@ body, p {
 .logo{
     display: flex;
     width: 80px;
+    height: 24px;
 }
 iframe{
     width: 10vw;
@@ -52,17 +53,13 @@ iframe{
 .search-button{
     align-content: center;
     display: flex;
-}
-button{
     background-color: rgb(247, 247, 247);
     border-radius: 0px 5px 5px 0px;
     width: 50px;
     border: solid rgb(218, 218, 218);
-    
 }
 
 .menu-item {
-    border: rgb(179, 179, 179) 2px;
     padding: 0px 20px 0px 20px;
 }
 
@@ -110,7 +107,18 @@ nav {
 
 .settings-menu {
     background-color: goldenrod;
+    display: flex;
+    justify-content: start;
+    padding: 10px;
 }
+
+.footer-btn {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+
+
 
 .other-links {
     background-color: green;
