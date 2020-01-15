@@ -1,75 +1,90 @@
-html{
-    /* position: relative;  */
-    width: 100%;
-    /* overflow: hidden; */
-} 
-body, p {
+*{
     margin: 0px;
-    padding: 0px;
+
+}
+
+body, p {
+   background-color: lightgray;
+}
+.logo{
+    display: flex;
+    width: 80px;
+}
+iframe{
+    width: 10vw;
 }
 
 .master-header{
-    background-color: cadetblue;
+    background-color: white;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 15px 0px; 
     align-items: center;
+    margin-top: 0px;
     width: 100%;
-    
 }
 
 .left-nav {
-    border: olive dashed 2px;
     display: flex;
     align-items: center;
 }
 
 .right-nav {
-    border: olive dashed 2px;
     display: flex;
 
 }
 
 .searchbar {
-    border: olive dashed 2px;
     display: flex;
     flex-basis: 600px;
 
 }
 .search-box{
     margin: 0 auto;
+    border: solid rgb(218, 218, 218);
     max-width: 600px; 
     flex-grow: 1;
+    border-radius: 5px 0px 0px 5px;
+    border-right: 0px;
+    padding-left: 10px;
     
 }
 .search-button{
-    border: red solid 2px;
+    align-content: center;
     display: flex;
 }
 button{
-    width: 5vw;
+    background-color: rgb(247, 247, 247);
+    border-radius: 0px 5px 5px 0px;
+    width: 50px;
+    border: solid rgb(218, 218, 218);
+    
 }
 
 .menu-item {
-    border: rgb(0, 30, 128) dashed 2px;
+    border: rgb(179, 179, 179) 2px;
     padding: 0px 20px 0px 20px;
 }
 
 nav {
-    background-color: palegreen;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 .main-grid {
     border: peru dotted 3px;
     display: grid;
+    align-self: center;
     grid-template-columns: 1fr 200px;
     grid-gap: 20px;
     max-width: 800px;
-    padding: 10px;
+    padding: 20px 10px;
     margin: 0 auto;
+    background:grey;
 }
-
+.left-container{
+    border: indigo dotted 3px;
+}
 .title-box {
     border: greenyellow solid 5px;
 }
