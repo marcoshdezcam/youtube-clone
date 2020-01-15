@@ -18,6 +18,7 @@
         EXTRAS 
     -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -39,45 +40,66 @@
             <i class="material-icons menu-item">account_circle</i>
         </nav>
     </header>
-
     <section class="main-grid">
         <div class="left-container">
             <div class="video">
-                <iframe width="860" height="615" src="https://www.youtube.com/embed/0cn1YTpDIUg" frameborder="0"
+                <iframe class="video" src="https://www.youtube.com/embed/0cn1YTpDIUg" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
-            <div class="title-box">Words go here</div>
-            <div class="description-box">Words go here</div>
-            <div class="comment-loading-box">Loading...</div>
-        </div>
+            <div class="main-info">
+                <h1 id="video-title">Making a YouTube clone: The Easy Way</h1>
+                <div id="info-text">
+                    <div id="left-info">
+                        <span>1,999,999 views</span>
+                        <span>·</span>
+                        <span>15 Jan. 2020</span>
 
-        <div class="right-container">
-            <div class="sidebar">
-                <div>
-                    <img src="./img/thumbnail.png">
+                    </div>
+                    <div id="right-info">
+                        <i class="material-icons menu-item video-icon active-video-icon">thumb_up</i>1,999,998
+                        <i class="material-icons menu-item video-icon active-video-icon">thumb_down</i>1
+                        <i class="material-icons menu-item video-icon">share</i>Share
+                        <i class="material-icons menu-item video-icon">post_add</i>Save
+                        <i class="material-icons menu-item video-icon">more_horiz</i>
+                    </div>
                 </div>
-                <div>
-                    <img src="./img/thumbnail.png">
-                </div>
-                <div>
-                    <img src="./img/thumbnail.png">
-                </div>
-                <div>
-                    <img src="./img/thumbnail.png">
-                </div>
-                <div>
-                    <img src="./img/thumbnail.png">
-                </div>
-                <div>
-                    <img src="./img/thumbnail.png">
-                </div>
-                <div>
-                    <img src="./img/thumbnail.png">
+                <div id="video-description">
+                    <div id="channel-name">
+
+                    </div>
+                    <div id="video-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt
+                        in culpa qui officia deserunt mollit anim id est laborum
+                    </div>
+
                 </div>
 
             </div>
         </div>
+        <div class="right-container">
+            <div class="sidebar">
+                <div class="thumbnail-container">
+                    <a href="youtube.com"><img src="./img/thumbnail_1.jpg"></a>
+                    <div>
+                        <h2 class="related-video-title">Tic Tac Toe</h2>
+                        <p id="related-video-channel">Slobotzky</p>
+                        <p id="related-video-views">123,543</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="comment-loading-box">Loading...</div>
+        </div>
+
     </section>
 
 

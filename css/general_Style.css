@@ -11,8 +11,14 @@ body, p {
     width: 80px;
     height: 24px;
 }
-iframe{
-    width: 10vw;
+
+.video{
+    width: 100%;
+}
+
+
+.thumbnails-related-videos{
+    
 }
 
 .master-header{
@@ -72,9 +78,9 @@ nav {
     border: peru dotted 3px;
     display: grid;
     align-self: center;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 300px;
     grid-gap: 20px;
-    max-width: 800px;
+    max-width: 1100px;
     padding: 20px 10px;
     margin: 0 auto;
     background:grey;
@@ -82,12 +88,49 @@ nav {
 .left-container{
     border: indigo dotted 3px;
 }
-.title-box {
-    border: greenyellow solid 5px;
+.main-info {
+    border-bottom: rgb(194, 194, 194) solid 2px;
+ 
+}
+#video-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    margin: 10px 0px;
+}
+#info-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: rgb(231, 231, 231);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0px;
+}
+#left-info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#right-info{
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: flex-end;
+}
+.active-video-icon{
+    border-bottom: red 10px;
+    box-sizing: border-box;
+}
+.video-icon{
+    width: 10px;
+    /* padding: 20px; */
+    padding-left: 10px;
+    /* align-content: center; */
 }
 
 .description-box {
-    border: teal dashed 4px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
 }
 
 .comment-loading-box {
@@ -99,10 +142,20 @@ nav {
     margin-bottom: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .main-grid {
         grid-template-columns: 1fr;
     }
+}
+
+.thumbnail-container{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    display: flex;
+    
+}
+.thumbnail-container img{
+    width: 150px;
 }
 
 .settings-menu {
@@ -110,6 +163,7 @@ nav {
     display: flex;
     justify-content: start;
     padding: 10px;
+
 }
 
 .footer-btn {
