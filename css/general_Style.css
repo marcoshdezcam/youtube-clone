@@ -2,17 +2,13 @@
     margin: 0px;
     font-family: 'Roboto', sans-serif;
 }
-
 footer {
     background: white;
 }
-
 a {
     text-decoration: none;
     padding: 0px;
 }
-
-
 body {
     background-color: rgb(238,238,238);
 }
@@ -21,6 +17,10 @@ div{
 }
 
  /* HEADER  */
+ nav {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 .master-header{
     background-color: white;
     display: flex;
@@ -30,28 +30,24 @@ div{
     margin-top: 0px;
     width: 100%;
 }
-.menu-item {
+.header-item {
     padding: 0px 20px 0px 20px;
+}
+.left-nav {
+    display: flex;
 }
 .logo{
     display: flex;
     width: 80px;
     height: 24px;
 }
-.left-nav {
-    display: flex;
-    /* align-items: center; */
-}
-.right-nav {
-    display: flex;
-}
 .searchbar {
     display: flex;
     flex-basis: 600px;
 }
 .search-box{
+    border: 2px solid rgb(218, 218, 218);
     margin: 0 auto;
-    border: solid rgb(218, 218, 218);
     max-width: 600px; 
     flex-grow: 1;
     border-radius: 5px 0px 0px 5px;
@@ -59,21 +55,19 @@ div{
     padding-left: 10px;
 }
 .search-button{
+    background-color: rgb(247, 247, 247);
+    border: 2px solid rgb(218, 218, 218);
     align-content: center;
     display: flex;
-    background-color: rgb(247, 247, 247);
     border-radius: 0px 5px 5px 0px;
     width: 50px;
-    border: solid rgb(218, 218, 218);
 }
-nav {
-    margin-left: 10px;
-    margin-right: 10px;
+.right-nav {
+    display: flex;
 }
 
   /* MAIN GRID  */
 .main-grid {
-    border: peru dotted 3px;
     display: grid;
     align-self: center;
     grid-template-columns: 1fr 30vw;
@@ -84,9 +78,8 @@ nav {
     background-color: rgb(247, 247, 247);
 }
 .left-container{
-    /* border: indigo dotted 3px; */
+   
 }
-
  /* VIDEO */
  .video-frame{
     /* border: 3px white solid; */
@@ -96,32 +89,6 @@ nav {
 .video{
     display: flex;
     flex-grow: 1;
-}
-/* VIDEO CHANNEL INFO  */
-#channel-name{
-    /* border: hotpink solid 5px; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#channel-title{
-    flex-grow: 1;
-    padding-left: 10px;
-}
-#channel-name h3{
-
-}
-#channel-name img{
-    border-radius: 50%;
-}
-#channel-name button{
-    background-color:#CC0000;
-    color: white;
-    border: 2px;
-    border-color: grey;
-    padding: 8px;
-    height: 40px;
-    margin: 5px;
 }
 /* VIDEO INFO */
 .main-info {
@@ -148,14 +115,19 @@ nav {
 }
 #left-info span{
     padding: 2px;
+    font-size: 0.9rem;
 }
 #right-info{
+    font-size: 0.7rem;
     display: flex;
     align-self: flex-end;
     align-items: center;
     justify-content: flex-end;
 }
-#right-info .menu-item{
+#right-info a{
+    
+}
+#right-info .item{
     padding: 0px 30px;
 }
 .active-video-icon{
@@ -170,15 +142,35 @@ nav {
     font-family: 'Noto Sans', sans-serif;
     font-size: 14px;
 }
-
+/* VIDEO CHANNEL INFO  */
+#channel-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#channel-title{
+    flex-grow: 1;
+    padding-left: 10px;
+}
+#channel-name img{
+    border-radius: 50%;
+}
+#channel-name button{
+    background-color:#CC0000;
+    color: white;
+    border: 2px;
+    border-color: grey;
+    padding: 8px;
+    height: 40px;
+    margin: 5px;
+}
+/* VIDEO DESCRIPTION AND COMMENT BOX */
 #video-description {
     padding-bottom: 20px;
 }
-
 #show-more {
     border-bottom: 10px solid gray;
 }
-
 .comment-loading-box {
     /* border: red solid 3px; */
     height: 10vw;
@@ -187,7 +179,21 @@ nav {
     align-items: center;
 }
 
-
+/* RELATED VIDEOS SIDEBAR */
+.sidebar {
+    margin-bottom: 10px;
+}
+.thumbnail-container{
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    margin-bottom: 10px;   
+}
+.thumbnail-container h2{
+    font-size: 14px;
+}
+.thumbnail-container img{
+    width: 160px;
+}
 /* UP-NEXT  */
 #up-next{
     display: flex;
@@ -254,24 +260,6 @@ nav {
     padding: 10px;
 }
 
-/* RELATED VIDEOS SIDEBAR */
-.sidebar {
-    border: rgb(203, 32, 218) solid 4px;
-    margin-bottom: 10px;
-}
-.thumbnail-container{
-    font-family: 'Noto Sans', sans-serif;
-    display: flex;
-    margin-bottom: 10px;   
-}
-.thumbnail-container h2{
-    font-size: 14px;
-}
-.thumbnail-container img{
-    width: 160px;
-}
-
-
 /* FOOTER  */
 .settings-menu {
     display: flex;
@@ -293,28 +281,23 @@ nav {
     margin-left: 5%;
     margin-right: 5%;
 }
-
 .other-links a {
     color: black;
     padding: 10px 20px 0 10px;
     
 }
-
 .business-links {
     display: flex;
     justify-content: start
 }
-
 .business-links a {
     font-size: 0.9rem;
 }
-
 .legal-links {
     display: flex;
     justify-content: start;
     padding-bottom: 60px;
 }
-
 .legal-links a {
     font-size: 0.8rem;
     color: gray;
