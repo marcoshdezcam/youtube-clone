@@ -1,6 +1,18 @@
 *{
     margin: 0px;
+    font-family: 'Roboto', sans-serif;
 }
+
+footer {
+    background: white;
+}
+
+a {
+    text-decoration: none;
+    padding: 0px;
+}
+
+
 body {
     background-color: rgb(238,238,238);
 }
@@ -103,7 +115,8 @@ nav {
     border-radius: 50%;
 }
 #channel-name button{
-    background-color: red;
+    background-color:#CC0000;
+    color: white;
     border: 2px;
     border-color: grey;
     padding: 8px;
@@ -157,10 +170,21 @@ nav {
     font-family: 'Noto Sans', sans-serif;
     font-size: 14px;
 }
+
+#video-description {
+    padding-bottom: 20px;
+}
+
+#show-more {
+    border-bottom: 10px solid gray;
+}
+
 .comment-loading-box {
-    border: red solid 3px;
+    /* border: red solid 3px; */
     height: 10vw;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -250,22 +274,55 @@ nav {
 
 /* FOOTER  */
 .settings-menu {
-    background-color: goldenrod;
     display: flex;
     justify-content: start;
-    padding: 10px;
+    padding: 10px 0;
+    border-bottom: gray 1px solid;
+    margin-left: 5%;
+    margin-right: 5%;
 
 }
 .footer-btn {
     display: flex;
     margin: 10px;
+    
     align-items: center;
 }
 .other-links {
     background-color: green;
+    margin-left: 5%;
+    margin-right: 5%;
 }
+
+.other-links a {
+    color: black;
+    padding: 10px 20px 0 10px;
+    
+}
+
+.business-links {
+    display: flex;
+    justify-content: start
+}
+
+.business-links a {
+    font-size: 0.9rem;
+}
+
+.legal-links {
+    display: flex;
+    justify-content: start;
+    padding-bottom: 60px;
+}
+
+.legal-links a {
+    font-size: 0.8rem;
+    color: gray;
+}
+
 @media (max-width: 1000px) {
     .main-grid {
         grid-template-columns: 1fr;
     }
 }
+
