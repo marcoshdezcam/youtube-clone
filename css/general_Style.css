@@ -1,8 +1,11 @@
 *{
     margin: 0px;
 }
-body, p {
-    background-color: rgb(247, 247, 247);
+body {
+    background-color: rgb(238,238,238);
+}
+div{
+    background-color: white;
 }
 
  /* HEADER  */
@@ -61,7 +64,7 @@ nav {
     border: peru dotted 3px;
     display: grid;
     align-self: center;
-    grid-template-columns: 1fr 15vw;
+    grid-template-columns: 1fr 30vw;
     grid-gap: 20px;
     max-width: 1700px;
     padding: 20px 10px;
@@ -69,14 +72,14 @@ nav {
     background-color: rgb(247, 247, 247);
 }
 .left-container{
-    border: indigo dotted 3px;
+    /* border: indigo dotted 3px; */
 }
 
  /* VIDEO */
  .video-frame{
-    border: 3px white solid;
+    /* border: 3px white solid; */
     display: flex;
-    height: 28vw;
+    height: 35vw;
 }
 .video{
     display: flex;
@@ -119,22 +122,28 @@ nav {
 #info-text{
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    color: rgb(231, 231, 231);
+    color: #909090;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 15px 0px;
+    /* align-items: center; */
+    margin: 10px 0px;
 }
 #left-info{
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
+#left-info span{
+    padding: 2px;
+}
 #right-info{
     display: flex;
     align-self: flex-end;
     align-items: center;
     justify-content: flex-end;
+}
+#right-info .menu-item{
+    padding: 0px 30px;
 }
 .active-video-icon{
     border-bottom: red 10px;
@@ -149,7 +158,76 @@ nav {
     font-size: 14px;
 }
 .comment-loading-box {
-    border: fuchsia dotted 4px;
+    border: red solid 3px;
+    height: 10vw;
+    text-align: center;
+}
+
+
+/* UP-NEXT  */
+#up-next{
+    display: flex;
+    justify-content: space-between;
+}
+/* TOGGLE SWITCH */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 15px;
+  }
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    top: -3px;
+    left: -2px;
+    background-color:#3f51b5;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  input:checked + .slider {
+    background-color: rgb(150, 150, 150);
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px rgb(150, 150, 150);
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 25px;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+  }
+#autoplay-toggle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;;
+}
+#autoplay-toggle p{
+    padding: 10px;
 }
 
 /* RELATED VIDEOS SIDEBAR */
