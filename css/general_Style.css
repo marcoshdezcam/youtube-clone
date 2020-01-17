@@ -79,10 +79,10 @@ div{
   /* MAIN GRID  */
 .main-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 420px;
     align-self: center;
     grid-gap: 20px;
-    max-width: 1700px;
+    max-width: 1720px;
     padding: 80px 10px;
     margin: 0 auto;
     background-color: rgb(247, 247, 247);
@@ -96,6 +96,7 @@ div{
     /* border: 3px white solid; */
     display: flex;
     height: 35vw;
+    max-height: 700px;
 }
 .video{
     display: flex;
@@ -109,6 +110,8 @@ div{
 
 #video-title {
     font-size: 18px;
+    font-weight: 400;
+    padding-top: 10px;
     margin: 10px 0px;
 }
 #info-text{
@@ -366,6 +369,11 @@ div{
 .footer-btn i {
     font-size: 1.4rem;
 }
+
+/* BIG SCREENS 2560 x 1440 */
+
+
+/* SMALL SCREEN */ 
 
 @media (max-width: 1000px) {
     .main-grid {
