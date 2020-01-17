@@ -31,6 +31,7 @@ div{
     align-items: center;
     margin-top: 0px;
     width: 100%;
+    z-index: 1;
 }
 .header-item {
     padding: 0px 20px 0px 20px;
@@ -45,10 +46,11 @@ div{
 }
 .searchbar {
     display: flex;
+    height: 38px;
     flex-basis: 600px;
 }
 .search-box{
-    border: 2px solid rgb(218, 218, 218);
+    border: 1px solid rgb(218, 218, 218);
     margin: 0 auto;
     max-width: 600px; 
     flex-grow: 1;
@@ -58,12 +60,16 @@ div{
 }
 .search-button{
     background-color: rgb(247, 247, 247);
-    border: 2px solid rgb(218, 218, 218);
+    color: rgb(138, 138, 138);
+    translate: (50%, 50%);
+    border: 1px solid rgb(218, 218, 218);
     align-content: center;
     display: flex;
-    border-radius: 0px 5px 5px 0px;
-    width: 50px;
+    border-radius: 0px 3px 3px 0px;
+    width: 80px;
+    font-size: 18px;
 }
+
 .right-nav {
     display: flex;
 }
@@ -81,7 +87,7 @@ div{
     
 }
 .left-container{
-   
+   margin-left: 15px;
 }
  /* VIDEO */
  .video-frame{
@@ -92,6 +98,7 @@ div{
 .video{
     display: flex;
     flex-grow: 1;
+
 }
 /* VIDEO INFO */
 .main-info {
@@ -164,12 +171,26 @@ div{
     border: 2px;
     border-color: grey;
     padding: 8px;
-    height: 40px;
+    width: 105px;
+    height: 36px;
     margin: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border-radius: 2px;
 }
 /* VIDEO DESCRIPTION AND COMMENT BOX */
+#description a{
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #aaaaaa;
+    font-size: 13px;
+    padding-left: 60px;
+    
+}
 #video-description {
     padding-bottom: 20px;
+    padding: 15px 60px;
 }
 #show-more {
     border-bottom: 10px solid gray;
@@ -184,7 +205,8 @@ div{
 
 /* RELATED VIDEOS SIDEBAR */
 .sidebar {
-    margin-bottom: 10px;
+    padding: 10px;
+    margin-right: 10px;
 }
 .thumbnail-container{
     font-family: 'Noto Sans', sans-serif;
@@ -195,13 +217,21 @@ div{
     font-size: 14px;
 }
 .thumbnail-container img{
-    width: 160px;
+    width: 160px;   
+}
+.tn-content{
+    padding-left: 5px;
 }
 /* UP-NEXT  */
 #up-next{
     display: flex;
     justify-content: space-between;
 }
+.play-next{
+    border-bottom: rgb(233, 233, 233) solid 1px;
+    padding-bottom: 10px;
+}
+
 /* TOGGLE SWITCH */
 .switch {
     position: relative;
