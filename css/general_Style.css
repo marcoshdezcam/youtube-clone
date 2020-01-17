@@ -93,7 +93,6 @@ div{
 }
  /* VIDEO */
  .video-frame{
-    /* border: 3px white solid; */
     display: flex;
     height: 35vw;
     max-height: 700px;
@@ -120,7 +119,6 @@ div{
     color: #909090;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     margin: 10px 0px;
     border-bottom: rgb(207, 207, 207) solid 1px;
     padding-bottom: 15px;
@@ -143,13 +141,6 @@ div{
     align-items: center;
     justify-content: flex-end;
 }
-
-/* #sentiment-bar {
-    position: relative;
-    top: 50px;
-    right: 50px;
-} */
-
 
 #right-info .item{
     padding: 0px 30px;
@@ -369,11 +360,6 @@ div{
 .footer-btn i {
     font-size: 1.4rem;
 }
-
-/* BIG SCREENS 2560 x 1440 */
-
-
-/* SMALL SCREEN */ 
 
 @media (max-width: 1000px) {
     .main-grid {
