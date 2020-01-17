@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     font-family: 'Roboto', sans-serif;
+    font-size: 10px;
 }
 footer {
     background: white;
@@ -57,6 +58,7 @@ div{
     border-radius: 5px 0px 0px 5px;
     border-right: 0px;
     padding-left: 10px;
+    font-size: 16px;
 }
 .search-button{
     background-color: rgb(247, 247, 247);
@@ -102,11 +104,11 @@ div{
 }
 /* VIDEO INFO */
 .main-info {
-    border-bottom: rgb(194, 194, 194) solid 2px; 
+    border-bottom:rgb(207, 207, 207) solid 1px; 
 }
+
 #video-title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     margin: 10px 0px;
 }
 #info-text{
@@ -117,6 +119,8 @@ div{
     justify-content: space-between;
     /* align-items: center; */
     margin: 10px 0px;
+    border-bottom: rgb(207, 207, 207) solid 1px;
+    padding-bottom: 15px;
 }
 #left-info{
     display: flex;
@@ -125,33 +129,37 @@ div{
 }
 #left-info span{
     padding: 2px;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
+    color: #aaaaaa;
 }
 #right-info{
-    font-size: 0.7rem;
+    font-size: 1.3rem;
+    font-weight: 500;
     display: flex;
     align-self: flex-end;
     align-items: center;
     justify-content: flex-end;
 }
-#right-info a{
-    
-}
+
+/* #sentiment-bar {
+    position: relative;
+    top: 50px;
+    right: 50px;
+} */
+
+
 #right-info .item{
     padding: 0px 30px;
 }
+
 .active-video-icon{
-    border-bottom: red 10px;
     box-sizing: border-box;
 }
 .video-icon{
     width: 10px;
     padding-left: 10px;
 }
-.description-box {
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 14px;
-}
+
 /* VIDEO CHANNEL INFO  */
 #channel-name{
     display: flex;
@@ -162,6 +170,15 @@ div{
     flex-grow: 1;
     padding-left: 10px;
 }
+
+#channel-title h3 {
+    font-size: 1.4rem;
+}
+
+#channel-title p {
+    font-size: 1.3rem;
+}
+
 #channel-name img{
     border-radius: 50%;
 }
@@ -181,22 +198,23 @@ div{
 }
 /* VIDEO DESCRIPTION AND COMMENT BOX */
 #description a{
-    font-weight: 500;
+    font-weight: 400;
     font-family: 'Roboto', sans-serif;
-    color: #aaaaaa;
+    color: #4b4b4b;
     font-size: 13px;
     padding-left: 60px;
-    
 }
+
+#description {
+    padding-bottom: 15px;
+}
+
 #video-description {
-    padding-bottom: 20px;
-    padding: 15px 60px;
+    padding: 15px 120px 20px 60px; 
+    font-size: 1.4rem;
 }
-#show-more {
-    border-bottom: 10px solid gray;
-}
+
 .comment-loading-box {
-    /* border: red solid 3px; */
     height: 10vw;
     display: flex;
     justify-content: center;
@@ -214,7 +232,7 @@ div{
     margin-bottom: 10px;   
 }
 .thumbnail-container h2{
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 .thumbnail-container img{
     width: 160px;   
@@ -227,6 +245,11 @@ div{
     display: flex;
     justify-content: space-between;
 }
+
+#up-next h2{
+    font-size: 1.6rem;
+}
+
 .play-next{
     border-bottom: rgb(233, 233, 233) solid 1px;
     padding-bottom: 10px;
@@ -265,7 +288,9 @@ div{
     background-color:#3f51b5;
     -webkit-transition: .4s;
     transition: .4s;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.6);
   }
+
   input:checked + .slider {
     background-color: rgb(150, 150, 150);
   }
@@ -291,6 +316,8 @@ div{
 }
 #autoplay-toggle p{
     padding: 10px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
 }
 
 /* FOOTER  */
@@ -298,7 +325,7 @@ div{
     display: flex;
     justify-content: start;
     padding: 10px 0;
-    border-bottom: gray 1px solid;
+    border-bottom: rgb(207, 207, 207) 1px solid;
     margin-left: 5%;
     margin-right: 5%;
 
@@ -324,7 +351,7 @@ div{
     justify-content: start
 }
 .business-links a {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
 .legal-links {
     display: flex;
@@ -332,8 +359,12 @@ div{
     padding-bottom: 60px;
 }
 .legal-links a {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     color: gray;
+}
+
+.footer-btn i {
+    font-size: 1.4rem;
 }
 
 @media (max-width: 1000px) {
