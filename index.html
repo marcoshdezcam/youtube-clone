@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>YouTube Mockup</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="author" content="Guilherme Recordon & Marcos Hernández">
+
+    <link rel="stylesheet" type="text/css" href="css/general_Style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="master-header">
+        <nav class="left-nav">
+            <i class="material-icons header-item">menu</i>
+            <img class="header-item logo" alt="YouTube Logo" src="img/youtube_logo.png">
+        </nav>
+
+        <div class="searchbar">
+            <input class="search-box" type="search" placeholder="Search">
+            <button class="material-icons search-button">search</button>
+        </div>
+
+        <nav class="right-nav">
+            <i class="material-icons header-item">video_call</i>
+            <i class="material-icons header-item">apps</i>
+            <i class="material-icons header-item">notifications</i>
+            <i class="material-icons header-item">account_circle</i>
+        </nav>
+    </header>
+    <section class="main-grid">
+        <div class="left-container">
+
+            <div class="video-frame">
+                <iframe class="video" src="https://www.youtube.com/embed/0cn1YTpDIUg"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="main-info">
+                <h1 id="video-title">Making a YouTube clone: The Easy Way</h1>
+                <div id="info-text">
+                    <div id="left-info">
+                        <span>1,999,999 views</span>
+                        <span>·</span>
+                        <span>15 Jan. 2020</span>
+                    </div>
+                    <div id="right-info">
+                        <i class="material-icons item video-icon active-video-icon">thumb_up</i>1,999,998
+                        <i class="material-icons item video-icon active-video-icon">thumb_down</i>1
+                        <button id="share-icon-button"><i class="material-icons item video-icon">share</i></button>
+                        <button id="share-button">SHARE</button>
+                        <i class="material-icons item video-icon">post_add</i>SAVE
+                        <i class="material-icons item video-icon">more_horiz</i>
+                    </div>
+                </div>
+                <div id="description">
+                    <div id="channel-name">
+                        <img src="img/channel-profile-picture.jpg" alt="Channel Profile Picture">
+                        <div id="channel-title">
+                            <h3>Microverse Project</h3>
+                            <p>1.3M Subscribers</p>
+                        </div>
+                        <button>SUBSCRIBE</button>
+                    </div>
+                    <div id="video-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt
+                        in culpa qui officia deserunt mollit anim id est laborum
+                    </div>
+
+                    <a href="#">SHOW MORE</a>
+                </div>
+            </div>
+            <div class="comment-loading-box">
+                <img src="img/loading.gif" alt="Loading icon"> Loading...
+            </div>
+        </div>
+        <div class="sidebar">
+            <div id="up-next">
+                <h2>Up Next</h2>
+                <div id="autoplay-toggle">
+                    <p>Autoplay</p>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="thumbnail-container play-next">
+                <a href="youtube.com"><img src="./img/Thumbnails/1.jpg" alt=""></a>
+                <div class="tn-content">
+                    <h2>TIC TAC TOE</h2>
+                    <p>Slobotzky</p>
+                    <p>123,543</p>
+                </div>
+            </div>
+            <div class="thumbnail-container">
+                <a href="youtube.com"><img src="./img/Thumbnails/2.jpg" alt=""></a>
+                <div class="tn-content">
+                    <h2 class="related-video-title">Programming Vs Coding</h2>
+                    <p>Slobotzky</p>
+                    <p>123,543</p>
+                </div>
+            </div>
+            <div class="thumbnail-container">
+                <a href="youtube.com"><img src="./img/Thumbnails/3.jpg" alt=""></a>
+                <div class="tn-content">
+                    <h2 class="related-video-title">How I started at coding?</h2>
+                    <p>Slobotzky</p>
+                    <p>123,543</p>
+                </div>
+            </div>
+            <div class="thumbnail-container">
+                <a href="youtube.com"><img src="./img/Thumbnails/4.jpg" alt=""></a>
+                <div class="tn-content">
+                    <h2 class="related-video-title">Which programming language to learn first?</h2>
+                    <p>Slobotzky</p>
+                    <p>123,543</p>
+                </div>
+            </div>
+            <div class="thumbnail-container">
+                <a href="youtube.com"><img src="./img/Thumbnails/5.jpg" alt=""></a>
+                <div class="tn-content">
+                    <h2 class="related-video-title">Why is coding so hard?</h2>
+                    <p>Slobotzky</p>
+                    <p>123,543</p>
+                </div>
+            </div>
+            <div class="thumbnail-container">
+                <a href="youtube.com"><img src="./img/Thumbnails/6.jpg" alt=""></a>
+                <div class="tn-content">
+                    <h2 class="related-video-title">3 Years of Computer Science in 8 minutes</h2>
+                    <p>Devon Crawford</p>
+                    <p>4.5 M</p>
+                </div>
+            </div>
+            <div class="thumbnail-container">
+                <a href="youtube.com"><img src="./img/Thumbnails/7.jpg" alt=""></a>
+                <div class="tn-content">
+                    <h2 class="related-video-title">10 Years of Coding in 10 Minutes</h2>
+                    <p>John Fish</p>
+                    <p>642,402</p>
+                </div>
+            </div>
+            <div class="thumbnail-container">
+                <a href="youtube.com"><img src="./img/Thumbnails/8.jpg" alt=""></a>
+                <div class="tn-content">
+                    <h2 class="related-video-title">Why Programming Is Important?</h2>
+                    <p>Bugra Kilic</p>
+                    <p>249,954</p>
+                </div>
+            </div>
+            <div class="thumbnail-container">
+                <a href="youtube.com"><img src="./img/Thumbnails/9.jpg" alt=""></a>
+                <div class="tn-content">
+                    <h2 class="related-video-title">Google Coding Interview With A Competitive Programmer</h2>
+                    <p>Clément Mihailescu</p>
+                    <p>1.2 M </p>
+                </div>
+            </div>
+            <div class="thumbnail-container">
+                <a href="https://www.youtube.com/watch?v=yBdTVmSVq14"><img src="./img/Thumbnails/10.jpg" alt=""></a>
+                <div class="tn-content">
+                    <h2 class="related-video-title">Charles Bradley - Why Is It So Hard (Live on KEXP)</h2>
+                    <p>KEXP</p>
+                    <p>2 M </p>
+                </div>
+            </div>
+            <div class="thumbnail-container">
+                <a href="https://www.youtube.com/watch?v=r-wVWMMyKY8"><img src="./img/Thumbnails/11.jpg" alt=""></a>
+                <div class="tn-content">
+                    <h2 class="related-video-title">De código 💩 a código limpio 🦄 - Refactoring tips ✨ | la función
+                        CodelyTV 22</h2>
+                    <p>CodelyTV - Redescubre la programación</p>
+                    <p>11,100 </p>
+                </div>
+            </div>
+            <div class="thumbnail-container">
+                <a href="youtube.com"><img src="./img/Thumbnails/12.jpg" alt=""></a>
+                <div class="tn-content">
+                    <h2 class="related-video-title">Flesh-Eating Bacteria Is Real and This Is How It Works</h2>
+                    <p>Seeker</p>
+                    <p>4.3 M </p>
+                </div>
+            </div>
+            <div class="thumbnail-container">
+                <a href="https://www.youtube.com/watch?v=tzvUGDaG62I"><img src="./img/Thumbnails/9.jpg" alt=""></a>
+                <div class="tn-content">
+                    <h2 class="related-video-title">How time zones are subtly messing with you</h2>
+                    <p>Verge Science</p>
+                    <p>942,000 </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="settings-menu">
+            <img class="logo footer-btn" alt="YouTube Logo" src="img/youtube_logo.png">
+            <button class="footer-btn">
+                <i class="material-icons">language</i>
+                Language: English
+                <i class="material-icons">arrow_drop_down</i>
+            </button>
+            <button class="footer-btn">
+                Location: Netherlands
+                <i class="material-icons">arrow_drop_down</i>
+            </button>
+            <button class="footer-btn">
+                Restricted Mode: Off
+                <i class="material-icons">arrow_drop_down</i>
+            </button>
+            <button class="footer-btn">
+                <i class="material-icons">hourglass_empty</i>
+                History
+            </button>
+            <button class="footer-btn">
+                <i class="material-icons">help</i>
+                Help
+            </button>
+        </div>
+        <div class="other-links">
+            <div class="business-links">
+                <a href="#">About</a>
+                <a href="#">Press</a>
+                <a href="#">Copyright</a>
+                <a href="#">Creators</a>
+                <a href="#">Advertise</a>
+                <a href="#">Developers</a>
+            </div>
+
+            <div class="legal-links">
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Policy & Safety</a>
+                <a href="#">Test new features</a>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
