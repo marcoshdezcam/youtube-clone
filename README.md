@@ -1,6 +1,6 @@
-# Youtube Clone 
+# Youtube Clone
 
-> A clone version of YouTube using only HTML and CSS. 
+> A clone version of YouTube using only HTML and CSS.
 
 ![screenshot](./screenshot.png)
 
@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://marcoshdezcam.github.io/youtube-clone/)
 
 ## Authors
 
